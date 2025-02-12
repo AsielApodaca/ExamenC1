@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExamenC1</string>
+    <string name="etCantidad">Cantidad</string>
+    <string name="etProducto">Producto</string>
+    <string name="etPrecio">Precio</string>
+    <string name="vCantidad">#</string>
+    <string name="vProducto">Producto</string>
+    <string name="vPrecio">$</string>
+    <string name="vSubtotal">Sub-total</string>
+    <string name="vIVA">IVA(16%)</string>
+    <string name="vTotal">Total</string>
+    <string name="btnAgregar">Agregar</string>
+</resources>

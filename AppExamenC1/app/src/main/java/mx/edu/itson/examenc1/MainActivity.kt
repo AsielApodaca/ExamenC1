@@ -49,21 +49,21 @@ class MainActivity : AppCompatActivity() {
                     tvCantidad1.setText(etCantidad.text.toString())
                     tvProducto1.setText(etProducto.text.toString())
                     subTotal1 =  etPrecio.text.toString().toFloat() * etCantidad.text.toString().toFloat()
-                    tvPrecio1.setText(subTotal1.toString())
+                    tvPrecio1.setText(String.format("%.2f", subTotal1))
                 }
 
                 2 -> {
                     tvCantidad2.setText(etCantidad.text.toString())
                     tvProducto2.setText(etProducto.text.toString())
                     subTotal2 =  etPrecio.text.toString().toFloat() * etCantidad.text.toString().toFloat()
-                    tvPrecio2.setText(subTotal2.toString())
+                    tvPrecio2.setText(String.format("%.2f", subTotal2))
                 }
 
                 3 -> {
                     tvCantidad3.setText(etCantidad.text.toString())
                     tvProducto3.setText(etProducto.text.toString())
                     subTotal3 =  etPrecio.text.toString().toFloat() * etCantidad.text.toString().toFloat()
-                    tvPrecio3.setText(subTotal3.toString())
+                    tvPrecio3.setText(String.format("%.2f", subTotal3))
                 }
             }
 
@@ -73,11 +73,11 @@ class MainActivity : AppCompatActivity() {
 
             if (productosIngresados == 3) {
                 var subTotal:Float = subTotal1 + subTotal2 + subTotal3
-                tvSubtotal.setText(subTotal.toString())
+                tvSubtotal.setText(String.format("%.2f", subTotal))
                 var iva:Float = subTotal * 0.16F
-                tvIVA.setText(iva.toString())
+                tvIVA.setText(String.format("%.2f", iva))
                 var total:Float = subTotal + iva
-                tvTotal.setText(total.toString())
+                tvTotal.setText(String.format("%.2f", total))
             }
         }
 
